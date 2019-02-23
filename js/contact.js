@@ -15,6 +15,8 @@ submitButton.addEventListener('click', function(e) {
     }
 });
 
+// Validates name, email and question 
+
 var validateForm = function (e) {
     
     // Boolean that is set to false if any of the fields are invalid

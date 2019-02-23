@@ -1,6 +1,7 @@
 /* ASORTED UTILITIES JAVASCRIPT FILE */
 
 
+// Format date for launch info
 var formatDate = function (date) {
   var monthNames = [
     "January", "February", "March",
@@ -14,9 +15,11 @@ var formatDate = function (date) {
   var monthIndex = date.getUTCMonth();
   var year = date.getFullYear();
 
+  // add 0 if 1-9
   var minutes = date.getUTCMinutes();
   minutes = (minutes < 10) ? "0" + minutes : minutes;
 
+  // add 0 if 1-9
   var hours = date.getUTCHours();
   hours = (hours < 10) ? "0" + hours : hours;
 
@@ -24,31 +27,13 @@ var formatDate = function (date) {
 };
 
 
-
-var formatDatePanel = function (date) {
-  var monthNames = [
-    "January", "February", "March",
-    "April", "May", "June", "July",
-    "August", "September", "October",
-    "November", "December"
-  ];
-
-
-  var day = date.getUTCDate();
-  var monthIndex = date.getUTCMonth();
-  var year = date.getFullYear();
-
-  return '<span>' + day + '. ' + monthNames[monthIndex] + ' ' + year + "</span>";
-};
-
-
-// adding some periods to launch  price
+// adding some periods to launch price
 var numberWithPeriods = function(num) {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 };
 
 
-
+// toggle info about rockets and launch pad for a launch
 var toggleInfo = function (currentButton) {
     return function () {
         
@@ -104,6 +89,7 @@ for (var i = 0;i < hoverElements.length; i++) {
   });
 }
 
+// show up arrow on scroll event
 var scrollFunction = function () {
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

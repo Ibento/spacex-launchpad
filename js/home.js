@@ -4,7 +4,8 @@ var launchContainer = document.getElementById('launchContainer');
 
 // Load next upcoming launch
 loadNext = function () {
-    // Get JSOn and populate launches
+
+    // Get JSON and populate launches
 
     getJSON("https://api.spacexdata.com/v3/launches/next").then(function(launch) {
 

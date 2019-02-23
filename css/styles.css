@@ -78,16 +78,12 @@ a:focus {
 	outline: none;
 }
 
-/* BODY */
-
 body {
 	font-family: Lato, Arial, sans-serif;
 	margin: 0 auto;
 	padding: 20px 0 0 0;
     max-width: 1200px;
     color: #f5f1f4;
-
-
 }
 
 
